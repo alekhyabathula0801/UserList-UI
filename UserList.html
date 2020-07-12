@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>
+        User List
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="row">
+
+        <div class="side">
+            Cuddle <button id="admin">ADMIN</button><br>
+            <a href="#Transactions" class="active">
+                <img id="icon" src="transaction.svg" alt="transaction icon">
+                Transactions</a><br>
+            <a href="#system settings">
+                <img id="icon" src="setting.svg" alt="setting icon">
+                System settings</a><br>
+            <a href="#Suggested Questions">
+                <img id="icon" src="question-mark.svg" alt="question mark icon">
+                Suggested Questions</a><br>
+            <div class="dropdown">
+                <a> <img id="icon" src="lock.svg" alt="lock icon">
+                    Authorization</a><br>
+                <div class="dropdown-content">
+                    <a href="#user">User</a><br>
+                    <a href="#groups">Groups</a><br>
+                    <a href="#permissions">Permissions</a><br>
+                </div>
+            </div>
+
+            <a href="#" id="end">
+                <img id="icon" src="person.svg" alt="person icon">
+                Alekhya <i class="arrow right"></i>
+            </a>
+        </div>
+
+        <div class="main">
+            <div class="ask">
+                <input type="text" placeholder="What do you want to ask?" name="ask">
+                <button type="submit">Ask</button>
+            </div><br>
+            <div class="users">
+                <input type="text" placeholder="Search User Name, Email, Status, Role " name="search">
+                <button type="submit">Search</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
