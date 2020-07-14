@@ -1,14 +1,12 @@
   .dropdown {
     position: relative;
-    display: inline-block;
+    cursor: pointer;
   }
   
   .dropdown-content {
     display: none;
-    position: absolute;
-    background-color: black;
-    min-width: 160px;
-    padding: 5px;
+    position: relative;
+    background-color: rgb(19, 17, 17);
   }
   
   .dropdown:hover .dropdown-content {
@@ -32,7 +30,7 @@
   }
 
   .side a{
-    background-color: black;
+    background-color: rgb(19, 17, 17);
     font-size: 10px;
   }
   
@@ -41,7 +39,7 @@
   }
 
   .dropdown {
-    background-color: black;
+    background-color: rgb(19, 17, 17);
   }
 
   .row { 
@@ -52,7 +50,7 @@
   
   .side {
     flex: 20%;
-    background-color:black;
+    background-color:rgb(19, 17, 17);
     color: #f9f9f9;
     padding-left: 5px;
     padding-top: 10px;
@@ -74,8 +72,11 @@
   }
   
   .side #end {
+    width: 19.5%;
+    bottom: 0px;
+    flex-wrap: wrap;
     position: absolute;
-    bottom: 10px;
+    background-color:#413d3d;
   }
   
   #admin {
@@ -88,12 +89,17 @@
 
   #icon{
     background-color: white;
-    width: 11px;
-    height: 11px;
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+    vertical-align: middle;
   }
 
   .right {
     transform: rotate(-45deg);
+    float: right;
+    margin-right: 5px;
+    margin-top: 2px;
   }
 
   .arrow {
@@ -107,11 +113,9 @@
     padding: 5px;
     font-size: 10px;
     float: left;
-  }
-
-  .ask input[type=text] {
     width: 92%;
     border: none;
+    outline: none;
   }
 
   .ask-container {
@@ -120,6 +124,7 @@
   }
 
   #addNew {
+    cursor: pointer;
     float: right;
     background-color: blueviolet;
     color:white;
@@ -128,15 +133,20 @@
     border: 1px thin blueviolet;
   }
 
-  .ask ,.userData{
+  .ask, #userData{
     border: 1px solid silver;
     background-color: white;
     width: 100%;
-    padding: 5px;
+    padding: 3px;
+  }
+
+  #userData {
+    display: none;
   }
 
   .ask {
     border-radius: 4px;
+    justify-content: start;
   }
 
   .users {
@@ -154,12 +164,14 @@
     border: none;
     font-size: 10px;
     float: left;
+    outline: none;
   }
 
   .ask button, .users button {
     width: 8%;
     padding: 3px;
     font-size: 10px;
+    cursor: pointer;
   }
 
   .users button {
@@ -169,7 +181,7 @@
     background-color: white;
   }
 
-  .userData {
+  #userData {
     margin: 8px;
     background-color: white;
     width: 98%;
@@ -207,6 +219,7 @@
     border-radius: 3px;
     color: lawngreen;
     background-color: white;
+    cursor: pointer;
   }
 
   .inactive-status-button {
@@ -215,6 +228,7 @@
     border-radius: 3px;
     background-color: white;
     color: grey;
+    cursor: pointer;
   }
 
   #search-icon {
@@ -226,10 +240,6 @@
     color: blueviolet;
   }
 
-  /* td:nth-child(6) {
-    font-weight: bold;
-  } */
-
   .option-button {
     background-color: white;
     border: 1px solid white;
@@ -238,4 +248,8 @@
   table,th {
     border: none;
     border-top: none;
+  }
+
+  button {
+    outline: none;
   }

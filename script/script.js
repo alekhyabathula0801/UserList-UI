@@ -11,6 +11,30 @@ var usersData = [
     "name": "christina woods",
     "email": "wood@company.com",
     "status": "Active",
+    "role": "User",
+    "lastLogin": "2d ago",
+    "permission": "Valid"
+  },
+  {
+    "name": "christina woods",
+    "email": "wood@company.com",
+    "status": "Active",
+    "role": "User",
+    "lastLogin": "2d ago",
+    "permission": "Valid"
+  },
+  {
+    "name": "christina woods",
+    "email": "wood@company.com",
+    "status": "Active",
+    "role": "User",
+    "lastLogin": "2d ago",
+    "permission": "Valid"
+  },
+  {
+    "name": "christina woods",
+    "email": "wood@company.com",
+    "status": "Active",
     "role": "Administrator",
     "lastLogin": "5d ago",
     "permission": "Valid"
@@ -121,3 +145,12 @@ function createTable(data) {
 createTable(usersData);
 var userSize = document.getElementById("usersSize");
 userSize.textContent = "Users(" + usersData.length + ")";
+
+function displayUserData() {
+  let userData = document.getElementById("userData");
+  if (userData.style.display === "none") {
+    userData.style.display = "block";
+  } else {
+    userData.style.display = "none";
+  }
+}
