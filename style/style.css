@@ -44,16 +44,13 @@
     background-color: black;
   }
 
-  .row {  
-    display: -ms-flexbox; 
+  .row { 
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     min-height: 100%;
   }
   
   .side {
-    -ms-flex: 20%;
     flex: 20%;
     background-color:black;
     color: #f9f9f9;
@@ -62,7 +59,6 @@
   }
 
   .main {   
-    -ms-flex: 80%;
     flex: 80%;
     background-color: whitesmoke;
   }
@@ -98,7 +94,6 @@
 
   .right {
     transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
   }
 
   .arrow {
@@ -108,7 +103,7 @@
     padding: 3px;
   }
 
-  .ask input[type=text] , .users input[type=text] {
+  .ask input[type=text] {
     padding: 5px;
     font-size: 10px;
     float: left;
@@ -133,28 +128,45 @@
     border: 1px thin blueviolet;
   }
 
-  .ask , .userData{
+  .ask ,.userData{
     border: 1px solid silver;
     background-color: white;
     width: 100%;
-    justify-content: center;
     padding: 5px;
   }
 
-  .users input[type=text] {
-    width: 40%;
-    margin-top: 15px;
-    padding: 3px;
+  .ask {
+    border-radius: 4px;
   }
 
-  .users button {
+  .users {
+    border: 1px solid silver;
+    background-color: white;
+    width: 40%;
+    padding: 2px;
+    border-radius: 3px;
     margin-top: 15px;
+  }
+
+  .users input[type=text] {
+    width: 90%;
+    padding: 2px;
+    border: none;
+    font-size: 10px;
+    float: left;
   }
 
   .ask button, .users button {
     width: 8%;
     padding: 3px;
     font-size: 10px;
+  }
+
+  .users button {
+    width: 10%;
+    border: 1px solid white;
+    border: white;
+    background-color: white;
   }
 
   .userData {
@@ -181,4 +193,49 @@
 
   tr {
     border: 1px solid gray;
+  }
+
+  .table-icon {
+    width: 15px;
+    height: 13px;
+    vertical-align: middle;
+  }
+
+  .active-status-button {
+    font-size: 10px;
+    border: 1px solid lawngreen;
+    border-radius: 3px;
+    color: lawngreen;
+    background-color: white;
+  }
+
+  .inactive-status-button {
+    font-size: 10px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    background-color: white;
+    color: grey;
+  }
+
+  #search-icon {
+    width: 11px;
+    height: 11px;
+  }
+
+  td:nth-child(1) {
+    color: blueviolet;
+  }
+
+  /* td:nth-child(6) {
+    font-weight: bold;
+  } */
+
+  .option-button {
+    background-color: white;
+    border: 1px solid white;
+  }
+
+  table,th {
+    border: none;
+    border-top: none;
   }
