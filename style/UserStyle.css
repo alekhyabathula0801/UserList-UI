@@ -6,7 +6,7 @@
   .dropdown-content {
     display: none;
     position: relative;
-    background-color: rgb(32, 29, 29);
+    background-color: rgb(37,40,45);
   }
   
   .dropdown:hover .dropdown-content {
@@ -30,7 +30,7 @@
   }
 
   .side a{
-    background-color: rgb(32, 29, 29);
+    background-color: rgb(37,40,45);
     font-size: 10px;
   }
   
@@ -39,7 +39,7 @@
   }
 
   .dropdown {
-    background-color: rgb(32, 29, 29);
+    background-color: rgb(37,40,45);
   }
 
   .row { 
@@ -50,7 +50,7 @@
   
   .side {
     flex: 20%;
-    background-color:rgb(32, 29, 29);
+    background-color:rgb(37,40,45);
     color: #f9f9f9;
     padding-left: 5px;
     padding-top: 10px;
@@ -74,7 +74,7 @@
   
   #admin {
     color:white;
-    background-color: blueviolet;
+    background-color: rgb(114,72,229);
     font-size: 10px;
     padding: 2px;
     border-radius: 2px;
@@ -90,7 +90,6 @@
 
   .right {
     transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
     float: right;
     margin-right: 5px;
     margin-top: 2px;
@@ -120,11 +119,11 @@
   #addNew {
     cursor: pointer;
     float: right;
-    background-color: blueviolet;
+    background-color: rgb(116,59,255);
     color:white;
     font-size: 5px;
     padding: 5px;
-    border: 1px thin blueviolet;
+    border: 1px thin rgb(116,59,255);
   }
 
   .ask, #userData{
@@ -210,10 +209,10 @@
 
   .active-status-button {
     font-size: 10px;
-    border: 1px solid #008000;
+    border: 1px solid rgb(55, 231, 202);
     border-radius: 3px;
-    color: #008000;
-    background-color: white;
+    background-color: rgba(215, 248, 246, 0.609);
+    color:rgb(55, 231, 202);
     cursor: pointer;
   }
 
@@ -238,6 +237,7 @@
   .option-button {
     background-color: white;
     border: 1px solid white;
+    cursor: pointer;
   }
 
   table,th {
@@ -253,7 +253,7 @@
     background-color: rgb(85, 76, 76);
   }
 
-  @media only screen and (max-width:1080px) {
+  @media only screen and (min-width:100px) {
     .row,.side,.main {
       width:100%;
     }
