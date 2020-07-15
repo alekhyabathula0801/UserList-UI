@@ -41,25 +41,26 @@
   .dropdown {
     background-color: rgb(37,40,45);
   }
-
+  
   .row { 
     display: flex;
     flex-wrap: wrap;
     min-height: 100%;
   }
-  
+
   .side {
     flex: 20%;
     background-color:rgb(37,40,45);
     color: #f9f9f9;
     padding-left: 5px;
     padding-top: 10px;
-    min-height: 100%;
+    height: inherit;
   }
 
   .main {  
     flex: 80%;
     background-color: whitesmoke;
+    height: inherit;
   }
   
   * {
@@ -70,6 +71,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
     margin: 0px;
+    height: 100%;
   }
   
   #admin {
@@ -152,11 +154,11 @@
     margin-bottom: 15px ;
   }
 
-  .users input[type=text] {
+  .users input {
     width: 90%;
     padding: 2px;
     border: none;
-    font-size: 10px;
+    font-size: 8px;
     float: left;
     outline: none;
   }
@@ -251,11 +253,29 @@
 
   #end {
     background-color: rgb(85, 76, 76);
+    position: absolute;
+    width: 19.5%;
+    bottom: 0;
   }
 
   @media only screen and (min-width:100px) {
     .row,.side,.main {
       width:100%;
+    }
+  }
+
+  @media only screen and (max-width:755px) {
+    #end {
+      background-color: rgb(85, 76, 76);
+      position: relative;
+      margin-top: 15px;
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width:495px) {
+    body {
+      height: 35%;
     }
   }
 
