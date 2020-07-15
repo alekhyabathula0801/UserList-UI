@@ -90,6 +90,7 @@
 
   .right {
     transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
     float: right;
     margin-right: 5px;
     margin-top: 2px;
@@ -250,4 +251,16 @@
 
   #end {
     background-color: rgb(85, 76, 76);
+  }
+
+  @media only screen and (max-width:1080px) {
+    .row,.side,.main {
+      width:100%;
+    }
+  }
+
+  #user-addnew {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
