@@ -8,11 +8,11 @@ var usersData = [
     "permission": "Valid"
   },
   {
-    "name": "christina woods",
-    "email": "wood@company.com",
-    "status": "Active",
+    "name": "vox",
+    "email": "fox@company.com",
+    "status": "Inactive",
     "role": "User",
-    "lastLogin": "2d ago",
+    "lastLogin": "1d ago",
     "permission": "Valid"
   },
   {
@@ -24,6 +24,14 @@ var usersData = [
     "permission": "Valid"
   },
   {
+    "name": "vox",
+    "email": "fox@company.com",
+    "status": "Inactive",
+    "role": "User",
+    "lastLogin": "1d ago",
+    "permission": "Valid"
+  },
+  {
     "name": "christina woods",
     "email": "wood@company.com",
     "status": "Active",
@@ -32,11 +40,11 @@ var usersData = [
     "permission": "Valid"
   },
   {
-    "name": "christina woods",
-    "email": "wood@company.com",
-    "status": "Active",
-    "role": "Administrator",
-    "lastLogin": "5d ago",
+    "name": "vox",
+    "email": "fox@company.com",
+    "status": "Inactive",
+    "role": "User",
+    "lastLogin": "1d ago",
     "permission": "Valid"
   },
   {
