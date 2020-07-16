@@ -5,15 +5,16 @@
   
   .dropdown-content {
     display: none;
-    position: relative;
+    position: absolute;
     background-color: rgb(37,40,45);
     z-index: 1;
+    width: 100%;
   }
   
   .dropdown:hover .dropdown-content {
     display: block;
   }
-  
+   
   .dropdown-content a, .side a {
     color: white;
     padding: 5px;
