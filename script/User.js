@@ -96,7 +96,7 @@ var usersData = [
     "permission": "Valid"
   }
 ]
-let table = document.getElementById('userTable');
+let table = document.getElementById('table-body');
 function createTable(data) {
   for (let user of data) {
     var row = document.createElement('tr');

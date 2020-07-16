@@ -24,7 +24,7 @@
                 <img id="icon" src="image/question-mark.svg" alt="question mark icon">
                 Suggested Questions</a><br>
             <div class="dropdown">
-                <a class="authorization"> <img id="icon" src="image/lock.svg" alt="lock icon" >
+                <a class="authorization"> <img id="icon" src="image/lock.svg" alt="lock icon">
                     Authorization</a>
                 <div class="dropdown-content">
                     <a onclick="displayUserData()">User</a><br>
@@ -53,17 +53,21 @@
                     <input type="text" placeholder="Search User Name, Email, Status, Role " name="search">
                     <button type="submit"> <img id="search-icon" src="image/search.svg" alt="search icon"></button>
                 </div>
-                <div style="overflow:scroll; height:500px;" class="table-div">
+                <div class="table-div">
                     <table id="userTable">
-                        <tr>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Status</th>
-                            <th>Role</th>
-                            <th>Last Login</th>
-                            <th>Permmision</th>
-                            <th></th>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Status</th>
+                                <th>Role</th>
+                                <th>Last Login</th>
+                                <th>Permmision</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                        </tbody>
                     </table>
                 </div>
             </div>
